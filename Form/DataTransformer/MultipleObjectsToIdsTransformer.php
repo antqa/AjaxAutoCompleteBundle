@@ -59,7 +59,10 @@ class MultipleObjectsToIdsTransformer implements DataTransformerInterface
      */
     public function reverseTransform($ids)
     {
-        $ids = explode(',', $ids);
+        if (false === is_array($ids)) {
+            $ids = explode(',', $ids);
+        }
+
         $ids = array_filter($ids, 'strlen');
 
         if (empty($ids)) {

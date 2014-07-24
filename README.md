@@ -63,7 +63,7 @@ Example controllers action:
                     ->getRepository('Acme:Object')
                     ->createQueryBuilder('o')
                     ->select('o.name, o.id')
-                    ->where($expr->like('o.name', ':name')
+                    ->where($expr->like('o.name', ':name'))
                     ->setParameter('name', sprintf('%s%%', $request->query->get('q', '')))
                     ->getQuery()
                     ->getArrayResult();
@@ -73,13 +73,14 @@ Example controllers action:
 
     public function get($ids)
     {
+        $expr = new Expr();
         $ids = explode(',', $ids);
 
         $objects = $this->getManager()
                     ->getRepository('Acme:Object')
                     ->createQueryBuilder('o')
                     ->select('o.id, o.name')
-                    ->where($this->getExpr()->in('o.id', ':ids'))
+                    ->where($expr->in('o.id', ':ids'))
                     ->setParameter('ids', $ids)
                     ->getQuery()
                     ->getArrayResult();
