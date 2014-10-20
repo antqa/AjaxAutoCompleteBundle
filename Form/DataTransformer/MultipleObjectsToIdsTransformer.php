@@ -35,7 +35,7 @@ class MultipleObjectsToIdsTransformer implements DataTransformerInterface
      */
     public function transform($array)
     {
-        if (false === is_array($array)) {
+        if (false === is_array($array) && !$array instanceof \Traversable) {
             return '';
         }
 
