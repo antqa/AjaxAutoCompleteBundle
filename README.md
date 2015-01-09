@@ -1,8 +1,43 @@
 AntQaAjaxAutoCompleteBundle
 ===========================
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Quality Score](https://img.shields.io/scrutinizer/g/piotrantosik/AntQaAjaxAutoCompleteBundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/piotrantosik/AntQaAjaxAutoCompleteBundle)
+[![Packagist Version](https://img.shields.io/packagist/v/piotrantosik/ajax-autocomplete-bundle.svg?style=flat-square)](https://packagist.org/packages/piotrantosik/ajax-autocomplete-bundle)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b7e7a961-c12b-4983-a3be-ae80c9e68a83/big.png)](https://insight.sensiolabs.com/projects/b7e7a961-c12b-4983-a3be-ae80c9e68a83)
+
+Install
+-------
+
+AntQaAjaxAutoCompleteBundle is installed using Composer.
+
+```bash
+$ php composer.phar require piotrantosik/ajax-autocomplete-bundle
+```
+
+Enable bundle
+-------------
+
+```php
+<?php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new AntQa\Bundle\AjaxAutoCompleteBundle\AntQaAjaxAutoCompleteBundle(),
+    );
+}
+```
+
+Example usage
+-------
+
 Quick usage with select2:
 
+```javascript
     $('input').select2({
         multiple: true,
         minimumInputLength: 2,
@@ -33,9 +68,11 @@ Quick usage with select2:
             }
         }
     });
+```
 
 Example routes:
 
+```yaml
     find_objects:
         pattern:        /find
         defaults:       { _controller: Acme:Default:find }
@@ -48,9 +85,11 @@ Example routes:
         defaults:       { _controller: Acme:Default:get }
         options:
             expose: true
+```
 
 Example controllers action:
 
+```php
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\JsonResponse;
     use Doctrine\ORM\Query\Expr;
@@ -87,6 +126,7 @@ Example controllers action:
 
         return new JsonResponse($objects);
     }
+```
 
 License
 -------
