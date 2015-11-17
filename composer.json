@@ -1,9 +1,9 @@
 {
-    "name": "piotrantosik/ajax-autocomplete-bundle",
+    "name": "antqa/ajax-autocomplete-bundle",
     "type": "symfony-bundle",
     "description": "Ajax AutoComplete Bundle",
     "keywords": ["autocomplete", "form", "ajax", "json"],
-    "homepage": "http://github.com/piotrantosik/AntQaAjaxAutoCompleteBundle",
+    "homepage": "https://wwww.ant.qa",
     "license": "MIT",
     "authors": [
         {
@@ -23,9 +23,8 @@
         "symfony/yaml": "~2.3"
     },
     "autoload": {
-        "psr-0": { "AntQa\\Bundle\\AjaxAutoCompleteBundle": "" }
+        "psr-4": { "AntQa\\AjaxAutoCompleteBundle\\": "" }
     },
-    "target-dir": "AntQa/Bundle/AjaxAutoCompleteBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "0.2.x-dev"
