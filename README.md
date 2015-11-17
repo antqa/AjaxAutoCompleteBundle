@@ -25,7 +25,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new AntQa\Bundle\AjaxAutoCompleteBundle\AntQaAjaxAutoCompleteBundle(),
+        new AntQa\AjaxAutoCompleteBundle\AntQaAjaxAutoCompleteBundle(),
     );
 }
 ```
@@ -33,7 +33,7 @@ public function registerBundles()
 Example usage
 -------
 
-Quick usage with select2:
+Quick usage with select2 3.x [(documentation)](http://select2.github.io/select2/):
 
 ```javascript
     $('input').select2({
