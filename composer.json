@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Ajax AutoComplete Bundle",
     "keywords": ["autocomplete", "form", "ajax", "json"],
-    "homepage": "https://wwww.ant.qa",
+    "homepage": "https://www.ant.qa",
     "license": "MIT",
     "authors": [
         {
@@ -27,7 +27,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2.x-dev"
+            "dev-master": "0.3.x-dev"
         }
     }
 }
