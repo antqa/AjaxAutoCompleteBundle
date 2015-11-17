@@ -2,11 +2,9 @@ AntQaAjaxAutoCompleteBundle
 ===========================
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Quality Score](https://img.shields.io/scrutinizer/g/piotrantosik/AntQaAjaxAutoCompleteBundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/piotrantosik/AntQaAjaxAutoCompleteBundle)
-[![Packagist Version](https://img.shields.io/packagist/v/piotrantosik/ajax-autocomplete-bundle.svg?style=flat-square)](https://packagist.org/packages/piotrantosik/ajax-autocomplete-bundle)
+[![Packagist Version](https://img.shields.io/packagist/v/antqa/ajax-autocomplete-bundle.svg?style=flat-square)](https://packagist.org/packages/antqa/ajax-autocomplete-bundle)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b7e7a961-c12b-4983-a3be-ae80c9e68a83/big.png)](https://insight.sensiolabs.com/projects/b7e7a961-c12b-4983-a3be-ae80c9e68a83)
-
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/df8fc243-855f-435e-b2c5-bc0cb06f7d14/big.png)](https://insight.sensiolabs.com/projects/df8fc243-855f-435e-b2c5-bc0cb06f7d14)
 Install
 -------
 

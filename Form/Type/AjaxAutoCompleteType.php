@@ -1,6 +1,6 @@
 <?php
 
-namespace AntQa\Bundle\AjaxAutoCompleteBundle\Form\Type;
+namespace AntQa\AjaxAutoCompleteBundle\Form\Type;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Form\AbstractType;
@@ -9,8 +9,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-use AntQa\Bundle\AjaxAutoCompleteBundle\Form\DataTransformer\ObjectToIdTransformer;
-use AntQa\Bundle\AjaxAutoCompleteBundle\Form\DataTransformer\MultipleObjectsToIdsTransformer;
+use AntQa\AjaxAutoCompleteBundle\Form\DataTransformer\ObjectToIdTransformer;
+use AntQa\AjaxAutoCompleteBundle\Form\DataTransformer\MultipleObjectsToIdsTransformer;
 
 /**
  * Class AjaxAutoCompleteType

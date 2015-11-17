@@ -1,6 +1,6 @@
 <?php
 
-namespace AntQa\Bundle\AjaxAutoCompleteBundle\Form\DataTransformer;
+namespace AntQa\AjaxAutoCompleteBundle\Form\DataTransformer;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Form\DataTransformerInterface;

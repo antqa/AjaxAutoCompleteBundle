@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="antqa.form.type.ajax_auto_complete.class">AntQa\Bundle\AjaxAutoCompleteBundle\Form\Type\AjaxAutoCompleteType</parameter>
+        <parameter key="antqa.form.type.ajax_auto_complete.class">AntQa\AjaxAutoCompleteBundle\Form\Type\AjaxAutoCompleteType</parameter>
     </parameters>
 
     <services>

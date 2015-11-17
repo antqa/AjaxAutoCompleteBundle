@@ -1,6 +1,6 @@
 <?php
 
-namespace AntQa\Bundle\AjaxAutoCompleteBundle;
+namespace AntQa\AjaxAutoCompleteBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
