@@ -77,10 +77,18 @@ class AjaxAutoCompleteType extends AbstractType
     }
 
     /**
+     * BC SF < 2.8
      * {@inheritdoc}
      */
     public function getName()
     {
+        return $this->getBlockPrefix();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBlockPrefix() {
         return 'ajax_auto_complete';
     }
 }
