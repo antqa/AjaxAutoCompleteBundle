@@ -59,8 +59,9 @@ class AjaxAutoCompleteType extends AbstractType
         ]);
     }
 
-    // BC for SF < 2.7
     /**
+     * BC for SF < 2.7
+     *
      * {@inheritdoc}
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
@@ -69,15 +70,18 @@ class AjaxAutoCompleteType extends AbstractType
     }
 
     /**
+     * BC for SF < 2.8
+     *
      * {@inheritdoc}
      */
     public function getParent()
     {
-        return 'text';
+        return method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix') ? 'Symfony\Component\Form\Extension\Core\Type\TextType' : 'text';
     }
 
     /**
      * BC SF < 2.8
+     *
      * {@inheritdoc}
      */
     public function getName()
