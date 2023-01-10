@@ -19,11 +19,8 @@ use AntQa\AjaxAutoCompleteBundle\Form\DataTransformer\MultipleObjectsToIdsTransf
  */
 class AjaxAutoCompleteType extends AbstractType
 {
-    private $om;
-
-    public function __construct(ObjectManager $om)
+    public function __construct(private ObjectManager $om)
     {
-        $this->om = $om;
     }
 
     /**

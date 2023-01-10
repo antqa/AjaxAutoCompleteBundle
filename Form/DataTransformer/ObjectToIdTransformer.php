@@ -13,12 +13,9 @@ use Symfony\Component\Form\Exception\TransformationFailedException;
  */
 class ObjectToIdTransformer implements DataTransformerInterface
 {
-    private $om, $class;
 
-    public function __construct(ObjectManager $om, string $class)
+    public function __construct(private ObjectManager $om, private string $class)
     {
-        $this->om = $om;
-        $this->class = $class;
     }
 
     /**
