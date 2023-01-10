@@ -2,7 +2,7 @@
 
 namespace AntQa\AjaxAutoCompleteBundle\Form\Type;
 
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Exception\InvalidConfigurationException;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -21,9 +21,6 @@ class AjaxAutoCompleteType extends AbstractType
 {
     private $om;
 
-    /**
-     * @param ObjectManager $om
-     */
     public function __construct(ObjectManager $om)
     {
         $this->om = $om;

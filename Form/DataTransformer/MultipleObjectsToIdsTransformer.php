@@ -3,7 +3,7 @@
 namespace AntQa\AjaxAutoCompleteBundle\Form\DataTransformer;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\TransformationFailedException;
 
@@ -16,11 +16,7 @@ class MultipleObjectsToIdsTransformer implements DataTransformerInterface
 {
     private $om, $class;
 
-    /**
-     * @param ObjectManager $om
-     * @param string        $class
-     */
-    public function __construct(ObjectManager $om, $class)
+    public function __construct(ObjectManager $om, string $class)
     {
         $this->om = $om;
         $this->class = $class;
