@@ -15,13 +15,13 @@
     ],
     "require": {
         "php": ">=8.0",
-        "symfony/framework-bundle": "~2.3|~3.0|~4.0",
-        "symfony/form": "~2.3|~3.0|~4.0",
+        "symfony/framework-bundle": "~4.4|~5.4",
+        "symfony/form": "~4.4|~5.4",
         "doctrine/orm": "~2.2,>=2.2.3|~4.0",
         "doctrine/persistence": "^2|^3"
     },
     "require-dev": {
-        "symfony/yaml": "~2.3|~3.0|~4.0"
+        "symfony/yaml": "~4.4|~5.4"
     },
     "autoload": {
         "psr-4": { "AntQa\\AjaxAutoCompleteBundle\\": "" }
